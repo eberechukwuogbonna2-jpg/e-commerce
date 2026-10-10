@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOP.CO | Casual Clothes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="category.css" />
+</head>
+<body>
+  <!-- Top Announcement Bar -->
+  <aside class="promo-bar" id="promoBar" aria-label="Announcement">
+    <div class="promo-content">
+      <span>Sign up and get 20% off to your first order.</span>
+      <a href="#newsletter">Sign Up Now</a>
+    </div>
+    <button class="promo-close" id="closePromoBtn" aria-label="Dismiss banner">&times;</button>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a class="brand-logo" href="index.html">SHOP.CO</a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="casual.html" class="nav-link has-dropdown active">
+          Shop
+          <svg class="chevron-down" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M1 1L5 5L9 1" />
+          </svg>
+        </a>
+        <a href="index.html#top-selling" class="nav-link">On Sale</a>
+        <a href="index.html#new-arrivals" class="nav-link">New Arrivals</a>
+        <a href="index.html#brands" class="nav-link">Brands</a>
+      </nav>
+
+      <div class="search-bar">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input type="search" placeholder="Search for products..." aria-label="Search for products" />
+      </div>
+
+      <div class="header-icons">
+        <a href="cart.html" class="icon-btn" aria-label="Shopping Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+          </svg>
+          <span class="cart-badge-count">3</span>
+        </a>
+        <a href="#" class="icon-btn" aria-label="User Account">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Category Section -->
+  <main class="main-content">
+    <div class="page-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="separator" aria-hidden="true">&gt;</span>
+        <span class="current" aria-current="page">Casual</span>
+      </nav>
+
+      <!-- Category Layout -->
+      <div class="category-layout">
+        <!-- Left Column: Filters Sidebar -->
+        <aside class="filters-sidebar" id="filtersSidebar" aria-label="Product filters">
+          <div class="filters-header">
+            <h2 class="filters-title">Filters</h2>
+            <button type="button" class="filter-icon-btn" aria-label="Filter Options">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" y1="21" x2="4" y2="14"></line>
+                <line x1="4" y1="10" x2="4" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="3"></line>
+                <line x1="20" y1="21" x2="20" y2="16"></line>
+                <line x1="20" y1="12" x2="20" y2="3"></line>
+                <line x1="1" y1="14" x2="7" y2="14"></line>
+                <line x1="9" y1="8" x2="15" y2="8"></line>
+                <line x1="17" y1="16" x2="23" y2="16"></line>
+              </svg>
+            </button>
+            <button type="button" class="close-filter-mobile" id="closeFilterMobileBtn" aria-label="Close filters">&times;</button>
+          </div>
+
+          <div class="filter-divider"></div>
+
+          <!-- Category Links List -->
+          <ul class="category-filter-list">
+            <li>
+              <a href="#" class="category-filter-link">
+                <span>T-shirts</span>
+                <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-filter-link">
+                <span>Shorts</span>
+                <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-filter-link">
+                <span>Shirts</span>
+                <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-filter-link">
+                <span>Hoodie</span>
+                <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="category-filter-link">
+                <span>Jeans</span>
+                <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="filter-divider"></div>
+
+          <!-- Price Filter Accordion -->
+          <div class="filter-group open" id="priceFilterGroup">
+            <button type="button" class="filter-group-header" onclick="toggleFilterGroup('priceFilterGroup')">
+              <span class="group-title">Price</span>
+              <svg class="chevron-accordion" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5L5 1L9 5"/></svg>
+            </button>
+            <div class="filter-group-content">
+              <div class="price-slider-wrap">
+                <div class="price-slider-track">
+                  <div class="price-slider-range" style="left: 15%; width: 60%;"></div>
+                  <div class="price-slider-thumb thumb-min" style="left: 15%;"></div>
+                  <div class="price-slider-thumb thumb-max" style="left: 75%;"></div>
+                </div>
+                <div class="price-labels">
+                  <span class="price-val" style="left: 15%;">$50</span>
+                  <span class="price-val" style="left: 75%;">$200</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-divider"></div>
+
+          <!-- Colors Filter Accordion -->
+          <div class="filter-group open" id="colorsFilterGroup">
+            <button type="button" class="filter-group-header" onclick="toggleFilterGroup('colorsFilterGroup')">
+              <span class="group-title">Colors</span>
+              <svg class="chevron-accordion" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5L5 1L9 5"/></svg>
+            </button>
+            <div class="filter-group-content">
+              <div class="color-swatches-grid">
+                <!-- 10 Colors: 2 rows of 5 -->
+                <button type="button" class="color-swatch" style="--swatch-color: #00c12b;" aria-label="Green" onclick="selectColor(this)"></button>
+                <button type="button" class="color-swatch" style="--swatch-color: #f50606;" aria-label="Red" onclick="selectColor(this)"></button>
+                <button type="button" class="color-swatch" style="--swatch-color: #f5dd06;" aria-label="Yellow" onclick="selectColor(this)"></button>
+                <button type="button" class="color-swatch" style="--swatch-color: #f57906;" aria-label="Orange" onclick="selectColor(this)"></button>
+                <button type="button" class="color-swatch" style="--swatch-color: #06caf5;" aria-label="Cyan" onclick="selectColor(this)"></button>
+                
+                <!-- Blue selected by default with checkmark as in screenshot -->
+                <button type="button" class="color-swatch selected" style="--swatch-color: #063af5;" aria-label="Blue" onclick="selectColor(this)">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </button>
+                <button type="button" class="color-swatch" style="--swatch-color: #7d06f5;" aria-label="Purple" onclick="selectColor(this)"></button>
+                <button type="button" class="color-swatch" style="--swatch-color: #f506a4;" aria-label="Pink" onclick="selectColor(this)"></button>
+                <button type="button" class="color-swatch white-swatch" style="--swatch-color: #ffffff;" aria-label="White" onclick="selectColor(this)"></button>
+                <button type="button" class="color-swatch" style="--swatch-color: #000000;" aria-label="Black" onclick="selectColor(this)"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-divider"></div>
+
+          <!-- Size Filter Accordion -->
+          <div class="filter-group open" id="sizeFilterGroup">
+            <button type="button" class="filter-group-header" onclick="toggleFilterGroup('sizeFilterGroup')">
+              <span class="group-title">Size</span>
+              <svg class="chevron-accordion" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5L5 1L9 5"/></svg>
+            </button>
+            <div class="filter-group-content">
+              <div class="size-tags-grid">
+                <button type="button" class="size-pill" onclick="selectSize(this)">XX-Small</button>
+                <button type="button" class="size-pill" onclick="selectSize(this)">X-Small</button>
+                <button type="button" class="size-pill" onclick="selectSize(this)">Small</button>
+                <button type="button" class="size-pill" onclick="selectSize(this)">Medium</button>
+                <!-- Large active by default as shown in reference image -->
+                <button type="button" class="size-pill selected" onclick="selectSize(this)">Large</button>
+                <button type="button" class="size-pill" onclick="selectSize(this)">X-Large</button>
+                <button type="button" class="size-pill" onclick="selectSize(this)">XX-Large</button>
+                <button type="button" class="size-pill" onclick="selectSize(this)">3X-Large</button>
+                <button type="button" class="size-pill" onclick="selectSize(this)">4X-Large</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-divider"></div>
+
+          <!-- Dress Style Filter Accordion -->
+          <div class="filter-group open" id="dressStyleFilterGroup">
+            <button type="button" class="filter-group-header" onclick="toggleFilterGroup('dressStyleFilterGroup')">
+              <span class="group-title">Dress Style</span>
+              <svg class="chevron-accordion" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5L5 1L9 5"/></svg>
+            </button>
+            <div class="filter-group-content">
+              <ul class="category-filter-list">
+                <li>
+                  <a href="#" class="category-filter-link active-link">
+                    <span>Casual</span>
+                    <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category-filter-link">
+                    <span>Formal</span>
+                    <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category-filter-link">
+                    <span>Party</span>
+                    <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="category-filter-link">
+                    <span>Gym</span>
+                    <svg class="chevron-right" viewBox="0 0 6 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M1 9L5 5L1 1"/></svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Apply Filter Button -->
+          <button type="button" class="apply-filter-btn" onclick="applyFilters()">Apply Filter</button>
+        </aside>
+
+        <!-- Right Column: Products Section -->
+        <section class="products-section" aria-label="Casual Products">
+          <!-- Section Header: Title & Sort Info -->
+          <div class="products-header">
+            <h1 class="category-title">Casual</h1>
+            
+            <div class="products-meta-controls">
+              <span class="products-count">Showing 1-10 of 100 Products</span>
+              <div class="sort-selector">
+                <span class="sort-label">Sort by:</span>
+                <div class="sort-dropdown">
+                  <select id="sortSelect" aria-label="Sort products">
+                    <option value="popular" selected>Most Popular</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                  </select>
+                  <svg class="chevron-select" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M1 1L5 5L9 1" />
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Mobile Trigger to Open Filter Drawer -->
+              <button type="button" class="mobile-filter-trigger" id="mobileFilterTrigger" aria-label="Open Filters">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="4" y1="21" x2="4" y2="14"></line>
+                  <line x1="4" y1="10" x2="4" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="12"></line>
+                  <line x1="12" y1="8" x2="12" y2="3"></line>
+                  <line x1="20" y1="21" x2="20" y2="16"></line>
+                  <line x1="20" y1="12" x2="20" y2="3"></line>
+                  <line x1="1" y1="14" x2="7" y2="14"></line>
+                  <line x1="9" y1="8" x2="15" y2="8"></line>
+                  <line x1="17" y1="16" x2="23" y2="16"></line>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- 9-Product Grid -->
+          <div class="products-grid">
+            <!-- Product 1: Gradient Graphic T-shirt -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/gradient-tshirt.jpg" alt="Gradient Graphic T-shirt" loading="eager" />
+                </div>
+                <h3 class="product-name">Gradient Graphic T-shirt</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span class="half-star">★</span><span class="empty-star">★</span>
+                  </div>
+                  <span class="rating-number">3.5/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$145</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 2: Polo with Tipping Details -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/polo-shirt.jpg" alt="Polo with Tipping Details" loading="eager" />
+                </div>
+                <h3 class="product-name">Polo with Tipping Details</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="half-star">★</span>
+                  </div>
+                  <span class="rating-number">4.5/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$180</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 3: Black Striped T-shirt -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/black-striped-tee.jpg" alt="Black Striped T-shirt" loading="eager" />
+                </div>
+                <h3 class="product-name">Black Striped T-shirt</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  </div>
+                  <span class="rating-number">5.0/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$120</span>
+                  <del class="price-original">$150</del>
+                  <span class="discount-badge">-30%</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 4: Skinny Fit Jeans -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/skinny-jeans.jpg" alt="Skinny Fit Jeans" loading="lazy" />
+                </div>
+                <h3 class="product-name">Skinny Fit Jeans</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span class="half-star">★</span><span class="empty-star">★</span>
+                  </div>
+                  <span class="rating-number">3.5/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$240</span>
+                  <del class="price-original">$260</del>
+                  <span class="discount-badge">-20%</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 5: Checkered Shirt -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/checkered-shirt.jpg" alt="Checkered Shirt" loading="lazy" />
+                </div>
+                <h3 class="product-name">Checkered Shirt</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="half-star">★</span>
+                  </div>
+                  <span class="rating-number">4.5/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$180</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 6: Sleeve Striped T-shirt -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/sleeve-striped-tee.jpg" alt="Sleeve Striped T-shirt" loading="lazy" />
+                </div>
+                <h3 class="product-name">Sleeve Striped T-shirt</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="half-star">★</span>
+                  </div>
+                  <span class="rating-number">4.5/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$130</span>
+                  <del class="price-original">$160</del>
+                  <span class="discount-badge">-30%</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 7: Vertical Striped Shirt -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/vertical-striped-shirt.jpg" alt="Vertical Striped Shirt" loading="lazy" />
+                </div>
+                <h3 class="product-name">Vertical Striped Shirt</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                  </div>
+                  <span class="rating-number">5.0/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$212</span>
+                  <del class="price-original">$232</del>
+                  <span class="discount-badge">-20%</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 8: Courage Graphic T-shirt -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/courage-graphic-tee.jpg" alt="Courage Graphic T-shirt" loading="lazy" />
+                </div>
+                <h3 class="product-name">Courage Graphic T-shirt</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span class="empty-star">★</span>
+                  </div>
+                  <span class="rating-number">4.0/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$145</span>
+                </div>
+              </a>
+            </article>
+
+            <!-- Product 9: Loose Fit Bermuda Shorts -->
+            <article class="product-card">
+              <a href="product-details.html" class="product-link">
+                <div class="product-img-box">
+                  <img src="images/bermuda-shorts.jpg" alt="Loose Fit Bermuda Shorts" loading="lazy" />
+                </div>
+                <h3 class="product-name">Loose Fit Bermuda Shorts</h3>
+                <div class="product-rating">
+                  <div class="stars-gold" aria-hidden="true">
+                    <span>★</span><span>★</span><span>★</span><span class="empty-star">★</span><span class="empty-star">★</span>
+                  </div>
+                  <span class="rating-number">3.0/<span class="rating-max">5</span></span>
+                </div>
+                <div class="product-price-row">
+                  <span class="price-current">$80</span>
+                </div>
+              </a>
+            </article>
+          </div>
+
+          <!-- Bottom Pagination Controls -->
+          <div class="pagination-bar">
+            <button type="button" class="pagination-nav-btn prev-btn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+              <span>Previous</span>
+            </button>
+
+            <div class="pagination-numbers">
+              <button type="button" class="page-num active">1</button>
+              <button type="button" class="page-num">2</button>
+              <button type="button" class="page-num">3</button>
+              <span class="page-dots">...</span>
+              <button type="button" class="page-num">8</button>
+              <button type="button" class="page-num">9</button>
+              <button type="button" class="page-num">10</button>
+            </div>
+
+            <button type="button" class="pagination-nav-btn next-btn">
+              <span>Next</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- Newsletter & Footer Wrap -->
+  <footer class="footer-section">
+    <div class="page-container footer-container">
+      <!-- Floating Newsletter Card -->
+      <section class="newsletter-card" id="newsletter">
+        <h2 class="newsletter-heading">
+          STAY UPTO DATE ABOUT<br />OUR LATEST OFFERS
+        </h2>
+        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+          <div class="newsletter-input-box">
+            <svg class="mail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <input type="email" id="newsletterEmail" placeholder="Enter your email address" required aria-label="Enter your email address" />
+          </div>
+          <button type="submit" class="subscribe-btn">Subscribe to Newsletter</button>
+        </form>
+      </section>
+
+      <!-- Main Footer Columns -->
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <a class="footer-brand" href="index.html">SHOP.CO</a>
+          <p class="brand-desc">
+            We have clothes that suits your style and which you're proud to wear. From women to men.
+          </p>
+          <div class="social-row">
+            <a href="#" class="social-circle" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M23.95 4.57a10 10 0 0 1-2.83.78 4.93 4.93 0 0 0 2.17-2.72 9.9 9.9 0 0 1-3.13 1.2 4.92 4.92 0 0 0-8.39 4.49A13.98 13.98 0 0 1 1.64 2.16a4.92 4.92 0 0 0 1.52 6.57 4.9 4.9 0 0 1-2.23-.62v.06a4.93 4.93 0 0 0 3.95 4.83 4.9 4.9 0 0 1-2.22.08 4.94 4.94 0 0 0 4.6 3.42A9.88 9.88 0 0 1 0 18.54a13.94 13.94 0 0 0 7.55 2.21c9.06 0 14.01-7.5 14.01-14.01l-.02-.64a10 10 0 0 0 2.46-2.54z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-circle" aria-label="Facebook">
+              <svg viewBox="0 0 320 512" fill="currentColor" aria-hidden="true">
+                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06H297V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+              </svg>
+            </a>
+            <a href="#" class="social-circle" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-circle" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.1.67-3.75-1.32-3.75-1.32-.5-1.29-1.24-1.63-1.24-1.63-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 .1.1 2.1 2.62 1.59.1-.74.39-1.24.71-1.52-2.47-.28-5.07-1.24-5.07-5.5 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.77 1.15 2.99 0 4.27-2.6 5.21-5.08 5.49.4.35.76 1.02.76 2.06v3.05c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="col-title">COMPANY</h3>
+          <ul class="col-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="col-title">HELP</h3>
+          <ul class="col-links">
+            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Delivery Details</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="col-title">FAQ</h3>
+          <ul class="col-links">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Manage Deliveries</a></li>
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Payments</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="col-title">RESOURCES</h3>
+          <ul class="col-links">
+            <li><a href="#">Free eBooks</a></li>
+            <li><a href="#">Development Tutorial</a></li>
+            <li><a href="#">How to - Blog</a></li>
+            <li><a href="#">Youtube Playlist</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Copyright & Payments -->
+      <div class="footer-bottom">
+        <p class="copyright-text">Shop.co © 2000-2023, All Rights Reserved</p>
+        <div class="payment-methods" aria-label="Accepted Payment Methods">
+          <div class="payment-badge" aria-label="Visa">
+            <span class="visa-text">VISA</span>
+          </div>
+          <div class="payment-badge" aria-label="Mastercard">
+            <div class="mc-circles">
+              <span class="mc-circle red"></span>
+              <span class="mc-circle yellow"></span>
+            </div>
+          </div>
+          <div class="payment-badge" aria-label="PayPal">
+            <span class="paypal-text"><span class="pp-dark">Pay</span><span class="pp-light">Pal</span></span>
+          </div>
+          <div class="payment-badge" aria-label="Apple Pay">
+            <svg class="apple-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16.37 1.43c0 1.14-.42 2.2-1.24 3.16-1 .99-2.21 1.57-3.52 1.46-.04-.14-.06-.29-.06-.45 0-1.1.48-2.27 1.32-3.2C13.8 1.38 14.99.75 16.2.7c.06.24.17.49.17.73ZM20.64 15.37c-.47 1.06-.69 1.55-1.29 2.5-.83 1.29-2.01 2.9-3.47 2.92-1.3.01-1.63-.85-3.39-.84-1.76.01-2.12.85-3.41.84-1.46-.01-2.58-1.48-3.41-2.77-2.33-3.6-2.58-7.83-1.14-10.08 1.03-1.61 2.67-2.56 4.21-2.56 1.57 0 2.56.85 3.84.85 1.24 0 2-.85 3.8-.85 1.36 0 2.8.74 3.83 2.02-3.37 1.85-2.82 6.66.43 7.97Z"/>
+            </svg>
+            <span class="apple-pay-text">Pay</span>
+          </div>
+          <div class="payment-badge" aria-label="Google Pay">
+            <svg class="gpay-icon" viewBox="0 0 24 24">
+              <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.75 3.27-8.1Z"/>
+              <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.65l-3.57-2.77c-.99.66-2.25 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.15v2.84A11 11 0 0 0 12 23Z"/>
+              <path fill="#fbbc05" d="M5.84 14.11A6.6 6.6 0 0 1 5.5 12c0-.73.12-1.44.34-2.11V7.05H2.15A11 11 0 0 0 1 12c0 1.78.43 3.46 1.15 4.95l3.69-2.84Z"/>
+              <path fill="#ea4335" d="M12 5.36c1.62 0 3.06.56 4.2 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1a11 11 0 0 0-9.85 6.05l3.69 2.84C6.71 7.29 9.14 5.36 12 5.36Z"/>
+            </svg>
+            <span class="gpay-text">Pay</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div class="toast-notification" id="toastNotification" role="status" aria-live="polite"></div>
+
+  <!-- Mobile Filter Overlay Backdrop -->
+  <div class="filter-backdrop" id="filterBackdrop"></div>
+
+  <script src="category.js"></script>
+</body>
+</html>

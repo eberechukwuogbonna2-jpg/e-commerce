@@ -1,0 +1,245 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+
+            padding: 12px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .logo-icon {
+            font-size: 20px;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 8px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c95738;
+        }
+
+        /* =========================
+           HERO SECTION
+        ========================= */
+
+        .hero {
+            min-height: 140px;
+
+            position: relative;
+
+            display: flex;
+            align-items: center;
+
+            padding: 45px 25px 20px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0, 0, 0, 0.85),
+                    rgba(0, 0, 0, 0.3)
+                ),
+                url("https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=1200&q=80");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 250px;
+        }
+
+        .small-title {
+            font-size: 6px;
+            color: #f5c6a5;
+            margin-bottom: 2px;
+        }
+
+        .hero h1 {
+            font-family: "DM Serif Display", serif;
+            font-style: italic;
+
+            font-size: 22px;
+            line-height: 1.05;
+
+            margin-bottom: 9px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 7px;
+        }
+
+        .btn {
+            border: none;
+            padding: 5px 9px;
+
+            font-size: 6px;
+            cursor: pointer;
+
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .primary-btn {
+            background: #b8492e;
+            color: white;
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: white;
+        }
+
+        /* =========================
+           PRODUCTS
+        ========================= */
+
+        .products-section {
+            padding: 17px 5px 30px;
+        }
+
+        .section-title {
+            text-align: center;
+
+            font-family: "DM Serif Display", serif;
+            font-style: italic;
+
+            font-size: 13px;
+
+            margin-bottom: 15px;
+        }
+
+        .products {
+            width: 100%;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 3px;
+
+            border: 1px solid #1684c4;
+            padding: 2px;
+        }
+
+        /* =========================
+           PRODUCT CARD
+        ========================= */
+
+        .product-card {
+            position: relative;
+
+            background: #111;
+
+            color: white;
+
+            overflow: hidden;
+
+            min-height: 113px;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 78px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        .product-info {
+            padding: 5px 6px;
+        }
+
+        .price {
+            font-size: 6px;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+
+        .product-name {
+            font-size: 6px;
+            line-height: 1.3;
+
+            color: #eee;
+
+            width: 65px;
+        }
+
+        .add-btn {
+            position: absolute;
+
+            right: 5px;
+            bottom: 5px;
+
+            border: none;
+
+            background: #a94832;
+            color: white;
+
+            font-size: 5px;
+
+            padding: 3px 5px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .add-btn:hover {
+            background: #d25d40;
+        }
+
+        .heart {
+            position: absolute;
+
+            right: 6px;
+            top: 83px;
+
+            font-size: 9px;
+
+            color: white;
+
+            cursor: pointer;
+        }
